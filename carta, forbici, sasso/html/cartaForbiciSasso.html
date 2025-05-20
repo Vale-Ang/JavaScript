@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 50%;
+            background-color: #F5F5F5;
+            border: 1px solid black;
+            border-radius: 16px;
+            padding: 12px;
+            margin-inline: auto;
+            box-sizing: border-box;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 24px);
+            display: block;
+            padding: 8px;
+            border: 1px solid #909090;
+        }
+        
+        button {
+            background-color: green;
+            padding: 8px 16px;
+            text-transform: uppercase;
+            width: 100%;
+            border: none;
+            font-weight: bold;
+            color: white;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+
+        img {
+            width: 50%;
+            margin-top: 120px;
+            display: block;
+            margin-inline: auto;
+        }
+
+        .bnone {
+            display: block;
+        }
+
+        .dnone {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form id= "form" class="bnone">
+        <label>Scelta Utente</label>
+        <img src="../immagini/carta.png" alt="" >
+        <input type="radio" value="carta" name="sceltaUtente" id="carta" checked="checked">
+        <label for="carta">Carta</label>
+        <img src="../immagini/forbici.png" alt="">
+        <input type="radio" value="forbici" name="sceltaUtente" id="forbici" checked="checked">
+        <label for="forbici">Forbici</label>
+        <img src="../immagini/sasso.png" alt="">
+        <input type="radio" value="sasso" name="sceltaUtente" id="sasso" checked="checked">
+        <label for="sasso">Sasso</label>
+        <button type="submit">Invia i dati</button>
+    </form>
+        <br/>
+
+    <div id= "div" class="dnone">
+        <label>Scelta Utente</label>
+        <img id="fotoUtente" src="" alt="" >
+        <label>Scelta Avversario</label>
+        <img id="fotoAvversario" src="" alt="" >
+        <h1>Vuoi continuare a giocare?</h1>
+        <button id="si" onclick="si()">Si</button>
+        <button id="no" style="background-color: red" onclick="no()">No</button>
+    </div>
+    <h1 id="risultati"></h1>
+    <script src="../script/carta-forbici-sasso.js"></script>
+        
+    
+    
+</body>
+</html>
