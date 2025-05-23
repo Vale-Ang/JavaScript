@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+            width: 50%;
+            background-color: #F5F5F5;
+            border: 1px solid black;
+            border-radius: 16px;
+            padding: 12px;
+            margin-inline: auto;
+            box-sizing: border-box;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 24px);
+            display: block;
+            padding: 8px;
+            border: 1px solid #909090;
+        }
+        
+        button {
+            background-color: green;
+            padding: 8px 16px;
+            text-transform: uppercase;
+            width: 100%;
+            border: none;
+            font-weight: bold;
+            color: white;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+
+        img {
+            width: 50%;
+            margin-top: 120px;
+            display: block;
+            margin-inline: auto;
+        }
+
+        .anone {
+            display: block;
+        }
+
+        .dnone {
+            display: none;
+            font: 'Times New Roman';
+        }
+    </style>
+</head>
+<body>
+    <form id= "anone" class="anone">
+        <label for="paragrafo">Paragrafo</label>
+        <input type="text" name="paragrafo" id="paragrafo">
+        <p>Personalizza la tua pagina</p>
+        <label>Scelta Carattere</label>
+        <input type="radio" value="Times New Roman" name="sceltaCarattere" id="times new roman" checked="checked">
+        <label for="TIMES NEW ROMAN">Times New Roman</label>
+        <input type="radio" value="Arial" name="sceltaCarattere" id="arial">
+        <label for="ARIAL">Arial</label>
+        <p></p>
+        <input type="color" id="favcolor" value="#ff0000">
+        <br/>
+        <label>Scelta Immagine</label>
+        <img src="../Foto/Rasputin.jpeg" alt="">
+        <input type="radio" value="Rasputin" name="sceltaImmagine" id="rasputin" checked="checked">
+        <label for="RASPUTIN">Rasputin</label>
+        <img src="../Foto/Tamagotchi.jpeg" alt="">
+        <input type="radio" value="Tamagotchi" name="sceltaImmagine" id="tamagotchi">
+        <label for="TAMAGOTCHI">Tamagotchi</label>
+        <img src="../Foto/Insieme.jpeg" alt="">
+        <input type="radio" value="Insieme" name="sceltaImmagine" id="insieme">
+        <label for="INSIEME">Insieme</label>
+        <button type="submit">Invia i dati</button>
+    </form>
+    <div id="body" style="width: 100%; height: 2000px;">
+        <p id= "dnone" class="dnone"></p>
+        <img id="fotodnone" class="dnone" src="" alt="">
+    </div>
+
+    <script src="../script/preferences.js"></script>
+</body>
+</html>
