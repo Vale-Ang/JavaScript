@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <style>
+        form {
+            width: 50%;
+            background-color: #F5F5F5;
+            border: 1px solid black;
+            border-radius: 16px;
+            padding: 12px;
+            margin-inline: auto;
+            box-sizing: border-box;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 24px);
+            display: block;
+            padding: 8px;
+            border: 1px solid #909090;
+        }
+        
+        .button {
+            background-color: green;
+            padding: 8px 16px;
+            text-transform: uppercase;
+            width: 100%;
+            border: none;
+            font-weight: bold;
+            color: white;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+
+        img {
+            width: 50%;
+            margin-top: 120px;
+            display: block;
+            margin-inline: auto;
+        }
+
+        .bnone {
+            display: block;
+        }
+
+        .dnone {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="container">
+        <label for="titolo">Inserisci il titolo</label>
+        <input type="text" name="titolo" id="titolo"> 
+        <label for="testo">Inserisci il testo</label>
+        <input type="text" name="testo" id="testo"> 
+        <button id="invio" class="button" type="submit">Invia i dati</button>
+    </form>
+    <form id="nuovo">
+        
+    </form>
+    <form id="modifica" class="dnone">
+     <label for="modificaTitolo">Modifica il titolo</label>
+        <input type="text" name="modificaTitolo" id="modificaTitolo"> 
+        <label for="modificaTesto">Modifica il testo</label>
+        <input type="text" name="modificaTesto" id="modificaTesto"> 
+        <button id="salvaModifica" class="button" onclick="salvaModifica()" >Modifica</button>   
+    </form>
+    <script src="../script/notes.js"></script>
+</body>
+</html>
